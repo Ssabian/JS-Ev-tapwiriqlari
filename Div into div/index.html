@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	 
+    var boyukDiv = function(width,height,number,color){
+       this.width=width;
+       this.height=height;
+       this.number=number;
+       this.color=color;
+       this.divYarat=function(){
+       	document.write("<div style='width:"+this.width+"px; height:auto; background-color:red; float:left; padding-left:25px;';>");
+
+        for(i=1;i<number; i++) {
+        	document.write("<div style='width:"+(this.width/4-25)+"px;height:"+this.height+"px;background-color:"+this.color+"; margin:5px; float:left;'></div>");
+        }
+      			document.write("</div>"); 
+       
+}
+              
+    }
+    
+	 
+         var div1=new boyukDiv(500,70,10,"orange"); 
+         div1.divYarat();
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
