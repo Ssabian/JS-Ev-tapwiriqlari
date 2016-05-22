@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="main/style.css">
+</head>
+<body style="background-color: #9B2817; ">
+<div class="main">
+	<div id="images" onclick="myFunc1()">
+		<img src="image/img1.jpg" >
+		<img src="image/img2.jpg" >
+		<img src="image/img7.jpg" >
+		<img src="image/img8.jpg" >
+		<img src="image/img5.jpg" >
+    </div>
+    <div id="sliderImg">
+    	<img src="image/img1.jpg" onclick="myf(this.id)" id="img1">
+    	<img src="image/img2.jpg" onclick="myf(this.id)" id="img2">
+    	<img src="image/img7.jpg" onclick="myf(this.id)" id="img7">
+    	<img src="image/img8.jpg" onclick="myf(this.id)" id="img8">
+    	<img src="image/img5.jpg" onclick="myf(this.id)" id="img5">
+    </div>
+    <button type="button" id="btn1" name="button" onclick="myFunction()"><img src="image/next.png" alt="next"></button>
+    <button type="button" id="btn2" name="button" onclick="myFunct1"><img src="image/back.png" alt="back"></button>
+</div> 
+
+<script>
+	var c=document.getElementById("sliderImg").children;
+    var d=document.getElementById("images");
+    var a=-1;
+function myFunction() {
+  if (a==-1) {
+    d.style.transform="translateX(0)";
+    c[0].style.opacity="1"
+    c[1].style.opacity="1"
+    c[2].style.opacity="1"
+    c[3].style.opacity="1"
+    c[4].style.opacity="1"
+  c[0].style.opacity="0.4"
+    a++;
+  }
+  if (a==0) {
+    d.style.transform="translateX(-1000px)";
+    c[0].style.opacity="1"
+    c[1].style.opacity="1"
+    c[2].style.opacity="1"
+    c[3].style.opacity="1"
+    c[4].style.opacity="1"
+  c[1].style.opacity="0.4"
+    a++;
+  }
+  else if (a==1) {
+    d.style.transform="translateX(-2000px)";
+    c[0].style.opacity="1"
+    c[1].style.opacity="1"
+    c[2].style.opacity="1"
+    c[3].style.opacity="1"
+    c[4].style.opacity="1"
+  c[2].style.opacity="0.4"
+    a++;
+  }
+  else if (a==2) {
+    d.style.transform="translateX(-3000px)";
+    c[0].style.opacity="1"
+    c[1].style.opacity="1"
+    c[2].style.opacity="1"
+    c[3].style.opacity="1"
+    c[4].style.opacity="1"
+  c[3].style.opacity="0.4"
+    a++;
+  }
+  else if (a==3) {
+    d.style.transform="translateX(-4000px)";
+    c[0].style.opacity="1"
+    c[1].style.opacity="1"
+    c[2].style.opacity="1"
+    c[3].style.opacity="1"
+    c[3].style.opacity="1"
+    c[4].style.opacity="1"
+  c[4].style.opacity="0.4"
+    a++;
+  }
+  else {
+    d.style.transform="translateX(0)";
+    c[0].style.opacity="1"
+    c[1].style.opacity="1"
+    c[2].style.opacity="1"
+    c[3].style.opacity="1"
+    c[4].style.opacity="1"
+    c[0].style.opacity="0.4"
+    a=-1;
+  }
+
+}
+
+function myf(x) {
+
+  c[0].style.opacity="1";
+  c[1].style.opacity="1";
+  c[2].style.opacity="1";
+  c[3].style.opacity="1";
+  c[4].style.opacity="1"
+  c[x].style.opacity="0.4";
+
+  if (c[0].style.opacity==0.4) {
+    d.style.transform="translateX(0)";
+
+  }
+  else if (c[1].style.opacity==0.4) {
+    d.style.transform="translateX(-1000px)";
+
+  }
+  else if (c[2].style.opacity==0.4) {
+    d.style.transform="translateX(-2000px)";
+
+  }
+  else if (c[3].style.opacity==0.4) {
+    d.style.transform="translateX(-3000px)";
+
+  }
+  else if (c[4].style.opacity==0.4) {
+    d.style.transform="translateX(-4000px)";
+
+  }
+  else {
+    d.style.transform="translateX(0)";
+
+  }
+}
+
+
+function myFunc1() {
+  if (a==-1) {
+    d.style.transform="translateX(-4000)";
+    c[0].style.opacity="1"
+    c[1].style.opacity="1"
+    c[2].style.opacity="1"
+    c[3].style.opacity="1"
+    c[4].style.opacity="1"
+  c[4].style.opacity="0.4"
+    a++;
+  }
+
+  if (a==0) {
+    d.style.transform="translateX(-4000px)";
+    c[0].style.opacity="1"
+    c[1].style.opacity="1"
+    c[2].style.opacity="1"
+    c[3].style.opacity="1"
+    c[4].style.opacity="1"
+  c[4].style.opacity="0.4"
+    a++;
+  }
+
+  else if (a==1) {
+    d.style.transform="translateX(-3000px)";
+    c[0].style.opacity="1"
+    c[1].style.opacity="1"
+    c[2].style.opacity="1"
+    c[3].style.opacity="1"
+    c[4].style.opacity="1"
+  c[3].style.opacity="0.4"
+    a++;
+  }
+
+  else if (a==2) {
+    d.style.transform="translateX(-2000px)";
+    c[0].style.opacity="1"
+    c[1].style.opacity="1"
+    c[2].style.opacity="1"
+    c[3].style.opacity="1"
+    c[4].style.opacity="1"
+  c[2].style.opacity="0.4"
+    a++;
+  }
+
+   else if (a==3) {
+    d.style.transform="translateX(-1000px)";
+    c[0].style.opacity="1"
+    c[1].style.opacity="1"
+    c[2].style.opacity="1"
+    c[3].style.opacity="1"
+    c[4].style.opacity="1"
+  c[1].style.opacity="0.4"
+    a++;
+  }
+
+  else {
+    d.style.transform="translateX(0)";
+    c[0].style.opacity="1"
+    c[1].style.opacity="1"
+    c[2].style.opacity="1"
+    c[3].style.opacity="1"
+    c[4].style.opacity="1"
+    c[0].style.opacity="0.4"
+    a=-1;
+  }
+
+}
+
+setInterval(myFunction,5000)
+
+
+</script>
+</body>
+</html>
