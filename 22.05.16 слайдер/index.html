@@ -20,8 +20,10 @@
     	<img src="image/img8.jpg" onclick="myf(this.id)" id="img8">
     	<img src="image/img5.jpg" onclick="myf(this.id)" id="img5">
     </div>
-    <button type="button" id="btn1" name="button" onclick="myFunction()"><img src="image/next.png" alt="next"></button>
-    <button type="button" id="btn2" name="button" onclick="myFunct1"><img src="image/back.png" alt="back"></button>
+    
+    <button type="button" id="btn2" name="button" onclick="myFunct1"><img src="image/back.png"></button>
+    <button type="button" id="btn1" name="button" onclick="myFunction()"><img src="image/next.png"></button>
+    
 </div> 
 
 <script>
@@ -129,7 +131,7 @@ function myf(x) {
 }
 
 
-function myFunc1() {
+function myFunct1() {
   if (a==-1) {
     d.style.transform="translateX(-4000)";
     c[0].style.opacity="1"

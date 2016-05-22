@@ -16,6 +16,7 @@
   padding: 0;
   }
 #images img{
+
   width: 1000px;
   height: 700px;
   float: left;
@@ -32,6 +33,7 @@
 #sliderImg img{
   width: 175px;
   height: 100px;
+  border-radius: 200px;
   border: 1px solid red;
 }
 button{
